@@ -12,3 +12,8 @@ export function read_checkpoints({ from, to, get_remote_checkpoint, concurrent_d
     local_files_only?: boolean;
 }): Promise<void>;
 export function premap_transaction(transaction: any): any;
+
+export * from './generated/bcs-sui';
+export * from './generated/0x1';
+export * from './generated/0x2';
+// any other type files you want to export
